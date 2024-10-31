@@ -82,6 +82,19 @@ h1{
     text-align: center;
 }
 
+/* Skills */
+
+.container__skill{
+    height: 150px;
+    width: 150px;
+    background-color: gainsboro;
+    padding-left: 15px;
+    gap:10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: end;
+}
 /* Experiencia */
 .experiencia{
     padding: 40px 40px 60px 40px;
@@ -91,6 +104,14 @@ h1{
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
+}
+
+.experiencia__container{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .experiencia i {
@@ -189,7 +210,13 @@ h1{
 
 
 
-
+@media screen and (max-width: 1124px){
+    .container__skill{  
+        width: 200px;
+        flex-wrap: nowrap;
+        background-color: red;
+    }
+}
 
 @media screen and (min-width: 700px){
     .hero-inferior__img{
@@ -214,40 +241,5 @@ h1{
     }
 }
 
-/* Media Queries carrousel*/  
 
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-    
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
 
