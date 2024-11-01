@@ -47,6 +47,8 @@ h1{
 .seccion__texto{
     font-size: 1.2rem;
 }
+
+
 /* Seccion hero*/
 .hero{
     background-color: #f5f6f7;
@@ -84,10 +86,10 @@ h1{
 
 /* Skills */
 
-.container__skill{
+.container__skills{
     height: 150px;
     width: 150px;
-    background-color: gainsboro;
+    border: 1px solid #0d6efd;
     padding-left: 15px;
     gap:10px;
     display: flex;
@@ -106,12 +108,14 @@ h1{
     margin: 10px 0;
 }
 
-.experiencia__container{
+.skills__container{
+    gap: 15px;
     padding: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .experiencia i {
@@ -207,14 +211,24 @@ h1{
 }
 
 
+/* Contacto */
+.contacto__container{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 
 @media screen and (max-width: 1124px){
-    .container__skill{  
+    .container__skills{  
         width: 200px;
-        flex-wrap: nowrap;
-        background-color: red;
+    }
+
+    .skills__container{
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
@@ -226,6 +240,13 @@ h1{
 
 @media screen and (max-width:767px){
     .navbar-brand{
+        display: none;
+    }
+
+    .contacto__container{
+        justify-content: center;
+    }
+    .contacto__container img{
         display: none;
     }
 }
