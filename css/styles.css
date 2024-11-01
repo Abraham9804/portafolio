@@ -189,6 +189,8 @@ h1{
 
 .proyecto {
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .proyecto:hover .overlay {
@@ -214,12 +216,31 @@ h1{
 /* Contacto */
 .contacto__container{
     padding-top: 40px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 
+/* Footer */
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p {
+    padding-top: 15px;
+}
+
+footer img{
+   
+    width: 40px;
+}
 
 @media screen and (max-width: 1124px){
     .container__skills{  
